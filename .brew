@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install packages
+brew install git
+brew install node
+brew install mongodb
+brew install phantomjs
+brew install lynx
+brew install webkit2png
+brew install ack
+brew install tree
+brew install wget --enable-iri
+brew install php54
+
+# Remove outdated versions from the cellar
+brew cleanup
