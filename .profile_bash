@@ -42,6 +42,9 @@ alias mate="mate"
 alias sbl="sublime -w"
 
 # GIT
+alias status="git status"
+alias add="git add -A"
+alias commit="git commit -m "
 alias push="git push"
 alias pull="git pull"
 alias undopush="git push -f origin HEAD^:master" # Undo a `git push`
