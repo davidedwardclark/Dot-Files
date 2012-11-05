@@ -1,7 +1,10 @@
-## ALIASES ##
+## DEFAULTS ##
 
-# SET DEFAULT EDITOR
+# EDITOR
 export EDITOR='sublime -w'
+
+
+## ALIASES ##
 
 # NAVIGATION
 alias ..="cd .."
