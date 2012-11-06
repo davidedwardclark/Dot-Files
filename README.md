@@ -1,6 +1,6 @@
 Dotfiles
 ========
 
-All my OSX dotfiles in safe keeping.
+All my dotfiles in safe keeping.
 
-Based on @mathiasbynens & @paulirish's dotfiles.
+A subset of @mathiasbynens & @paulirish's dotfiles.
