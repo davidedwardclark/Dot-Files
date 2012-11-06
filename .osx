@@ -234,7 +234,7 @@ defaults write com.apple.dock autohide -bool true
 # Reset Launchpad
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
-# Bottom left screen corner → Start screen saver
+# Top right screen corner → Start screen saver
 defaults write com.apple.dock wvous-tr-corner -int 5
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
