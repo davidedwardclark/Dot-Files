@@ -15,7 +15,7 @@
 	    "couch"         : false,
 	    "wsh"           : false,   	// Windows Scripting Host.
 
-	    "jquery"        : false,
+	    "jquery"        : true,
 	    "prototypejs"   : false,
 	    "mootools"      : false,
 	    "dojo"          : false,
@@ -54,7 +54,7 @@
 	    "scripturl"     : true,   	// Tolerate script-targeted URLs.
 	    "shadow"        : false,  	// Allows re-define variables later in code e.g. `var x=1; x=2;`.
 	    "supernew"      : false,  	// Tolerate `new function () { ... };` and `new Object;`.
-	    "undef"         : true,   	// Require all non-global variables be declared before they are used.
+	    "undef"         : false,   	// Require all non-global variables be declared before they are used.
 
 	    // Personal styling preferences.
 	    "newcap"        : true,   	// Require capitalization of all constructor functions e.g. `new F()`.
@@ -65,7 +65,8 @@
 	    "plusplus"      : false,  	// Prohibit use of `++` & `--`.
 	    "sub"           : false,  	// Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
 	    "trailing"      : true,   	// Prohibit trailing whitespaces.
-	    "white"         : false,   	// Check against strict whitespace and indentation rules.
-	    "indent"        : 4       	// Specify indentation spacing
+	    "white"         : true,   	// Check against strict whitespace and indentation rules.
+	    "indent"        : 4,       	// Specify indentation spacing
+	    "smarttabs"		: true
 	}
 }
