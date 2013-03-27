@@ -1,8 +1,5 @@
 ## DEFAULTS ##
 
-# PATHS
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
 # EDITOR
 export EDITOR="sublime"
 
@@ -21,7 +18,6 @@ alias oo="open ."
 alias l="ls -l ${colorflag}"
 alias la="ls -la ${colorflag}"
 alias lsd="ls -l ${colorflag} | grep '^d'"
-alias sudo="sudo "
 alias hosts="sudo $EDITOR /etc/hosts"
 
 # MAINTENANCE
