@@ -1,7 +1,10 @@
 ## DEFAULTS ##
 
+# PATHS
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
 # EDITOR
-export EDITOR="sublime -w"
+export EDITOR="sublime"
 
 
 ## ALIASES ##
@@ -36,10 +39,7 @@ alias projects="cd ~/Projects"
 alias downloads="cd ~/Downloads"
 
 # PROGRAMS
-alias mongo="mongod run --dbpath ~/mongodb/data/ --config /usr/local/Cellar/mongodb/2.0.2-x86_64/mongod.conf"
-alias git="git"
-alias mate="mate"
-alias sbl="sublime -w"
+alias sbl="sublime"
 
 # GIT
 alias status="git status"
@@ -51,17 +51,12 @@ alias undopush="git push -f origin HEAD^:master"
 
 # SSH ALIASES
 alias cybertron="ssh -p 25386 root@173.255.210.11"
-alias unicron="ssh davidedwardclark@192.168.0.28"
 
 # NETWORK
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias whois="whois -h whois-servers.net"
-
-# NODEJS PATHS
-export NODE_PATH="/usr/local/lib/node:/usr/local/lib/node_modules"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
 
 # EXTRAS
 alias rot13="tr a-zA-Z n-za-mN-ZA-M"
