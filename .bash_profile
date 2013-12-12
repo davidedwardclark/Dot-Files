@@ -16,7 +16,7 @@ alias la="ls -la ${colorflag}"
 
 # MAINTENANCE
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
 # SHOW & HIDE HIDDEN FILES
 alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
