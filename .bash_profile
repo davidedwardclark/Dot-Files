@@ -8,17 +8,11 @@ export EDITOR="sublime"
 
 # NAVIGATION
 alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 
 # FILES
 alias o="open"
 alias oo="open ."
-alias l="ls -l ${colorflag}"
 alias la="ls -la ${colorflag}"
-alias lsd="ls -l ${colorflag} | grep '^d'"
-alias hosts="sudo $EDITOR /etc/hosts"
 
 # MAINTENANCE
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g"
@@ -45,17 +39,10 @@ alias push="git push"
 alias pull="git pull"
 alias undopush="git push -f origin HEAD^:master"
 
-# SSH ALIASES
-alias cybertron="ssh -p 25386 root@173.255.210.11"
-
 # NETWORK
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias whois="whois -h whois-servers.net"
-
-# EXTRAS
-alias rot13="tr a-zA-Z n-za-mN-ZA-M"
 
 
 ## FUNCTIONS ##
@@ -86,61 +73,6 @@ if [ $? -eq 0 ]; then
 		git diff --no-index --color-words "$@"
 	}
 fi
-
-# Create a data URL from a file
-function dataurl() {
-	local mimeType=$(file -b --mime-type "$1")
-	if [[ $mimeType == text/* ]]; then
-		mimeType="${mimeType};charset=utf-8"
-	fi
-	echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')"
-}
-
-# Start an HTTP server from a directory, optionally specifying the port
-function server() {
-	local port="${1:-8000}"
-	sleep 1 && open "http://localhost:${port}/" &
-	# Set the default Content-Type to `text/plain` instead of `application/octet-stream`
-	# And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
-	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
-}
-
-# Get gzipped file size
-function gz() {
-	echo "orig size (bytes): "
-	cat "$1" | wc -c
-	echo "gzipped size (bytes): "
-	gzip -c "$1" | wc -c
-}
-
-# Test if HTTP compression (RFC 2616 + SDCH) is enabled for a given URL.
-# Send a fake UA string for sites that sniff it instead of using the Accept-Encoding header. (Looking at you, ajax.googleapis.com!)
-function httpcompression() {
-	encoding="$(curl -LIs -H 'User-Agent: Mozilla/5 Gecko' -H 'Accept-Encoding: gzip,deflate,compress,sdch' "$1" | grep '^Content-Encoding:')" && echo "$1 is encoded using ${encoding#* }" || echo "$1 is not using any encoding"
-}
-
-# All the dig info
-function digga() {
-	dig +nocmd "$1" any +multiline +noall +answer
-}
-
-# Escape UTF-8 characters into their 3-byte format
-function escape() {
-	printf "\\\x%s" $(printf "$@" | xxd -p -c1 -u)
-	echo # newline
-}
-
-# Decode \x{ABCD}-style Unicode escape sequences
-function unidecode() {
-	perl -e "binmode(STDOUT, ':utf8'); print \"$@\""
-	echo # newline
-}
-
-# Get a character’s Unicode code point
-function codepoint() {
-	perl -e "use utf8; print sprintf('U+%04X', ord(\"$@\"))"
-	echo # newline
-}
 
 
 ## CLEAR ##
