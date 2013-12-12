@@ -30,4 +30,4 @@
     untracked = cyan
     
 [push]
-	default = simple
+    default = simple
