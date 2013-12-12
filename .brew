@@ -11,12 +11,6 @@ brew install git
 brew install node
 brew install mongodb
 brew install nginx
-brew install phantomjs
-brew install lynx
-brew install webkit2png
-brew install ack
-brew install tree
-brew install wget --enable-iri
 
 # Remove outdated versions from the cellar
 brew cleanup
