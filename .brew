@@ -11,8 +11,6 @@ brew install git
 brew install node
 brew install mongodb
 brew install nginx
-brew install yuicompressor
-brew install s3cmd
 
 # Remove outdated versions from the cellar
 brew cleanup
