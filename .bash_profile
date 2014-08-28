@@ -32,11 +32,15 @@ alias sbl="sublime"
 
 # GIT
 alias status="git status"
-alias add="git add -A"
+alias add="git add -A :/"
 alias commit="git commit -m "
 alias push="git push"
 alias pull="git pull"
 alias undopush="git push -f origin HEAD^:master"
+
+#NGINX
+alias start_nginx="sudo nginx"
+alias stop_nginx="sudo nginx -s stop"
 
 # NETWORK
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -48,29 +52,29 @@ alias whois="whois -h whois-servers.net"
 
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$@"
+        mkdir -p "$@" && cd "$@"
 }
 
 # Determine size of a file or total size of a directory
 function fs() {
-	if du -b /dev/null > /dev/null 2>&1; then
-		local arg=-sbh
-	else
-		local arg=-sh
-	fi
-	if [[ -n "$@" ]]; then
-		du $arg -- "$@"
-	else
-		du $arg .[^.]* *
-	fi
+        if du -b /dev/null > /dev/null 2>&1; then
+                local arg=-sbh
+        else
+                local arg=-sh
+        fi
+        if [[ -n "$@" ]]; then
+                du $arg -- "$@"
+        else
+                du $arg .[^.]* *
+        fi
 }
 
 # Use Git’s colored diff when available
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
-	function diff() {
-		git diff --no-index --color-words "$@"
-	}
+        function diff() {
+                git diff --no-index --color-words "$@"
+        }
 fi
 
 
