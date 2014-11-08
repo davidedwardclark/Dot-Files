@@ -6,6 +6,9 @@ export EDITOR="sublime"
 
 ## ALIASES ##
 
+# SERVERS
+alias cybertron="ssh root@162.243.203.68"
+
 # NAVIGATION
 alias ..="cd .."
 
@@ -33,7 +36,6 @@ alias sbl="sublime"
 # GIT
 alias status="git status"
 alias add="git add -A :/"
-alias commit="git commit -m "
 alias push="git push"
 alias pull="git pull"
 alias undopush="git push -f origin HEAD^:master"
