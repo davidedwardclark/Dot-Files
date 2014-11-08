@@ -1,5 +1,6 @@
 {
 	"font_face": "Inconsolata",
 	"font_size": 16,
-	"word_wrap": true
+	"word_wrap": true,
+	"rulers": [120]
 }
