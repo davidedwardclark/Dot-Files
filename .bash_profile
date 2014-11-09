@@ -40,7 +40,10 @@ alias push="git push"
 alias pull="git pull"
 alias undopush="git push -f origin HEAD^:master"
 
-#NGINX
+# MONGO
+alias start_mongo="mongod --config /usr/local/etc/mongod.conf"
+
+# NGINX
 alias start_nginx="sudo nginx"
 alias stop_nginx="sudo nginx -s stop"
 
