@@ -1,7 +1,7 @@
 ## DEFAULTS ##
 
 # EDITOR
-export EDITOR="sublime"
+export EDITOR="atom"
 
 
 ## ALIASES ##
@@ -21,9 +21,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
 # DIRECTORIES
 alias projects="cd ~/Projects"
-
-# PROGRAMS
-alias sbl="sublime"
 
 # GIT
 alias status="git status"

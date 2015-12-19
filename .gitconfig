@@ -1,5 +1,5 @@
 [core]
-    editor = sublime
+    editor = atom
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
 
@@ -17,7 +17,7 @@
     current = yellow reverse
     local = yellow
     remote = green
-    
+
 [color "diff"]
     meta = yellow bold
     frag = magenta bold
@@ -28,6 +28,6 @@
     added = yellow
     changed = green
     untracked = cyan
-    
+
 [push]
     default = simple
