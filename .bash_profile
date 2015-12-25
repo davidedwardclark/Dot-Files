@@ -16,7 +16,7 @@ alias ..="cd .."
 alias la="ls -la ${colorflag}"
 
 # MAINTENANCE
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
 # DIRECTORIES
