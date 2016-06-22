@@ -6,9 +6,6 @@ export EDITOR="atom"
 
 ## ALIASES ##
 
-# SERVERS
-alias cybertron="ssh root@162.243.203.68"
-
 # NAVIGATION
 alias ..="cd .."
 
@@ -20,6 +17,7 @@ alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
 # DIRECTORIES
+alias downloads="cd ~/Downloads"
 alias projects="cd ~/Projects"
 
 # GIT
