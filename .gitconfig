@@ -1,5 +1,5 @@
 [core]
-    editor = atom
+    editor = atom --wait
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
 
