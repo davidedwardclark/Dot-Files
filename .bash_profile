@@ -8,16 +8,14 @@ export EDITOR="atom"
 
 # NAVIGATION
 alias ..="cd .."
+alias projects="cd ~/Projects"
 
 # FILES
-alias la="ls -la ${colorflag}"
+alias la="ls -la"
 
 # MAINTENANCE
 alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
-
-# DIRECTORIES
-alias projects="cd ~/Projects"
 
 # GIT
 alias status="git status"
@@ -28,7 +26,7 @@ alias clean="git clean -fd"
 alias reset="git reset --hard HEAD"
 alias stash="git stash"
 
-# WEB SERVER
+# PROGRAMS
 alias webserver="python -m SimpleHTTPServer 8000"
 
 
