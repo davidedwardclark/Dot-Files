@@ -1,21 +1,13 @@
-## DEFAULTS ##
-
 # EDITOR
 export EDITOR="atom"
 
-
-## ALIASES ##
-
-# NAVIGATION
+# FILES
 alias ..="cd .."
 alias projects="cd ~/Projects"
-
-# FILES
 alias la="ls -la"
 
-# MAINTENANCE
-alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+# PROGRAMS
+alias webserver="python -m SimpleHTTPServer 8000"
 
 # GIT
 alias status="git status"
@@ -26,9 +18,9 @@ alias clean="git clean -fd"
 alias reset="git reset --hard HEAD"
 alias stash="git stash"
 
-# PROGRAMS
-alias webserver="python -m SimpleHTTPServer 8000"
+# MAINTENANCE
+alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
-
-## CLEAR ##
+# CLEANUP
 clear
