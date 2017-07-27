@@ -28,11 +28,9 @@ alias clean="git clean -fd"
 alias reset="git reset --hard HEAD"
 alias stash="git stash"
 
-# NGINX
-alias start_nginx="sudo nginx"
-alias stop_nginx="sudo nginx -s stop"
+# WEB SERVER
+alias webserver="python -m SimpleHTTPServer 8000"
 
 
 ## CLEAR ##
-
 clear
