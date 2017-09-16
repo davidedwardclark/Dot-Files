@@ -3,8 +3,8 @@ export EDITOR="atom"
 
 # FILES
 alias ..="cd .."
-alias projects="cd ~/Projects"
 alias la="ls -la"
+alias projects="cd ~/Projects"
 
 # MAINTENANCE
 alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
