@@ -7,18 +7,20 @@ alias la="ls -la"
 alias projects="cd ~/Projects"
 
 # MAINTENANCE
-function cleanup() {
+function clean_and_update() {
+
+  # Delete all DS_Store files.
   sudo find / -name ".DS_Store" -depth -exec rm {} \;
-  sudo rm -rfv /Volumes/*/.Trashes;
-  rm -rfv ~/.Trash
-}
-function update_npm() {
-  sudo npm install -g npm
-  npm update -g
-}
-function update_brew() {
-  brew update
-  brew upgrade
+
+  # Update NPM.
+  sudo npm install -g npm; npm update -g;
+
+  # Update Brew.
+  brew update; brew upgrade;
+
+  # Empty the trash.
+  sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash;
+
 }
 
 # GIT
@@ -30,6 +32,7 @@ alias pull="git pull"
 alias webserver="live-server"
 
 # STARTUP
+clean_and_update
 projects
 
 # CLEANUP
