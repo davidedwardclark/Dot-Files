@@ -7,8 +7,19 @@ alias la="ls -la"
 alias projects="cd ~/Projects"
 
 # MAINTENANCE
-alias cleanup="sudo find / -name ".DS_Store" -depth -exec rm {} \;"
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+function cleanup() {
+  sudo find / -name ".DS_Store" -depth -exec rm {} \;
+  sudo rm -rfv /Volumes/*/.Trashes;
+  rm -rfv ~/.Trash
+}
+function update_npm() {
+  sudo npm install -g npm
+  npm update -g
+}
+function update_brew() {
+  brew update
+  brew upgrade
+}
 
 # GIT
 alias status="git status"
@@ -18,7 +29,7 @@ alias pull="git pull"
 # PROGRAMS
 alias webserver="live-server"
 
-# INITIALISE
+# STARTUP
 projects
 
 # CLEANUP
