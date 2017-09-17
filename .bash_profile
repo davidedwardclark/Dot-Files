@@ -18,5 +18,8 @@ alias pull="git pull"
 # PROGRAMS
 alias webserver="python -m SimpleHTTPServer 8000"
 
+# INITIALISE
+projects
+
 # CLEANUP
 clear
