@@ -16,7 +16,7 @@ alias push="git push"
 alias pull="git pull"
 
 # PROGRAMS
-alias webserver="liver-server"
+alias webserver="live-server"
 
 # INITIALISE
 projects
