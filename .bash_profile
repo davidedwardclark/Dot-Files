@@ -10,19 +10,20 @@ alias projects="cd ~/Projects"
 function clean_and_update() {
 
   # Delete all DS_Store files.
-  sudo find / -name ".DS_Store" -depth -exec rm {} \;
+  sudo find / -name ".DS_Store" -depth -exec rm {} \
 
   # Update NPM.
-  sudo npm install -g npm;
-  npm update -g;
+  sudo npm install -g npm
+  npm update -g
+  npm cache clean -f
 
   # Update Brew.
-  brew update;
-  brew upgrade;
+  brew update
+  brew upgrade
 
   # Empty the trash.
-  sudo rm -rfv /Volumes/*/.Trashes;
-  rm -rfv ~/.Trash;
+  sudo rm -rfv /Volumes/*/.Trashes
+  rm -rfv ~/.Trash
 
 }
 
