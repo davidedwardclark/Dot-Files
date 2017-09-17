@@ -16,7 +16,7 @@ alias push="git push"
 alias pull="git pull"
 
 # PROGRAMS
-alias webserver="python -m SimpleHTTPServer 8000"
+alias webserver="liver-server"
 
 # INITIALISE
 projects
