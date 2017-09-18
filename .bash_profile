@@ -32,15 +32,15 @@ function update_and_clean() {
 }
 
 # PROGRAMS
-alias webserver="live-server"
+alias webserver="live-server";
 
 # GIT
-alias status="git status"
-alias push="git push"
-alias pull="git pull"
+alias status="git status";
+alias push="git push";
+alias pull="git pull";
 
 # STARTUP
-projects
+projects;
 
 # CLEANUP
-clear
+clear;
