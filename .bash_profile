@@ -1,30 +1,33 @@
 # EDITOR
-export EDITOR="atom"
+export EDITOR="atom";
 
 # FILES
-alias ..="cd .."
-alias la="ls -la"
-alias projects="cd ~/Projects"
+alias ..="cd ..";
+alias la="ls -la";
+alias projects="cd ~/Projects";
 
 # MAINTENANCE
 function update_and_clean() {
 
   # Update Brew.
-  brew update
-  brew upgrade
-  brew cleanup
+  brew update;
+  brew upgrade;
+  brew cleanup;
 
   # Update NPM.
-  sudo npm install -g npm
-  npm update -g
-  npm cache clean -f
+  sudo npm install -g npm;
+  npm update -g;
+
+  # Update Node.
+  sudo n stable;
+  npm update -g;
+  npm cache clean -f;
 
   # Delete all DS_Store files.
-  sudo find / -name ".DS_Store" -depth -exec rm {} \
+  sudo find / -name ".DS_Store" -depth -exec rm {} \;
 
   # Empty the trash.
-  sudo rm -rfv /Volumes/*/.Trashes
-  rm -rfv ~/.Trash
+  sudo rm -rfv ~/.Trash/*;
 
 }
 
