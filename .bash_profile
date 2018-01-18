@@ -1,5 +1,9 @@
-# EDITOR
+# Install Atom Editor, Homebrew, Node & NPM, and NVM.
+# Install Live Server: npm install -g live-server
+
+# EXPORTS
 export EDITOR="atom";
+export NVM_DIR="$HOME/.nvm";
 
 # FILES
 alias ..="cd ..";
@@ -14,19 +18,14 @@ function update_and_clean() {
   brew upgrade;
   brew cleanup;
 
-  # Update NPM.
-  sudo npm install -g npm;
-  npm update -g;
-
-  # Update Node.
-  sudo n stable;
+  # Update Node, NPM, packages, and do a clean.
+  nvm install node;
+  sudo npm install npm@latest -g;
   npm update -g;
   npm cache clean -f;
 
-  # Delete all DS_Store files.
+  # Delete DS_Store files and empty the trash.
   sudo find / -name ".DS_Store" -depth -exec rm {} \;
-
-  # Empty the trash.
   sudo rm -rfv ~/.Trash/*;
 
 }
@@ -39,8 +38,13 @@ alias status="git status";
 alias push="git push";
 alias pull="git pull";
 
+# NVM
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 # STARTUP
 projects;
 
 # CLEANUP
 clear;
+
