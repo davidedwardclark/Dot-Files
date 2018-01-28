@@ -1,11 +1,14 @@
-# OS Generated Files
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
 .DS_Store
-Thumbs.db
 Desktop.ini
 
-# External Disk Files
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-
-# NPM
-node_modules/
