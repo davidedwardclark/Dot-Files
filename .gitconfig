@@ -1,33 +1,66 @@
+[apply]
+
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
 [core]
-    editor = atom --wait
-    excludesfile = ~/.gitignore
-    attributesfile = ~/.gitattributes
 
-[user]
-    name = David Clark
-    email = davidedwardclark@gmail.com
+	# Use custom `.gitignore`
+	excludesfile = ~/.gitignore
 
-[github]
-    user = davidedwardclark
+	# Make `git rebase` safer on macOS
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
+	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+	precomposeunicode = false
+
+	# Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
 
 [color]
-    ui = always
+
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	ui = auto
 
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+
+	current = yellow reverse
+	local = yellow
+	remote = green
 
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
 
 [color "status"]
-    added = yellow
-    changed = green
-    untracked = cyan
+
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = true
+
+[help]
+
+	# Automatically correct and execute mistyped commands
+	autocorrect = 1
+
+[merge]
+
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
 
 [push]
-    default = simple
+
+	# https://git-scm.com/docs/git-config#git-config-pushdefault
+	default = simple
