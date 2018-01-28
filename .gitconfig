@@ -59,3 +59,8 @@
 
 	# https://git-scm.com/docs/git-config#git-config-pushdefault
 	default = simple
+
+[user]
+
+	name = David Clark
+	email = davidedwardclark@gmail.com
