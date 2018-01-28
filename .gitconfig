@@ -45,11 +45,6 @@
 	changed = green
 	untracked = cyan
 
-[commit]
-
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
-
 [help]
 
 	# Automatically correct and execute mistyped commands
