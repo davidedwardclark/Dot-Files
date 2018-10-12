@@ -1,5 +1,5 @@
 # Install Atom Editor, Homebrew, and Node.
-# Install Live Server: npm install -g live-server.
+# Install Live Server: sudo npm install -g live-server.
 
 # EXPORTS
 export EDITOR="atom";
