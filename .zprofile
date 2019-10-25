@@ -1,5 +1,6 @@
 # Install Atom Editor, and Node.
-# Install Live Server: sudo npm install -g live-server.
+# Install HTTP Server: sudo npm install http-server -g
+# Run HTTP Server: http-server -o
 
 # EXPORTS
 export EDITOR="atom";
