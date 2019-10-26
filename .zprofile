@@ -1,4 +1,4 @@
-# Install Atom Editor, and Node
+# Install Atom, Node, and Git
 # Install HTTP Server: sudo npm install http-server -g
 # Run HTTP Server: http-server -o
 
