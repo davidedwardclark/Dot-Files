@@ -1,5 +1,6 @@
-# Install Atom, Node, and Git
+# Install Atom, Git, and Node
 # Install HTTP Server: sudo npm install http-server -g
+# Reclaim .config: sudo chown -R dclark .config
 # Run HTTP Server: http-server -o
 
 # EXPORTS
