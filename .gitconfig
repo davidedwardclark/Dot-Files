@@ -1,6 +1,6 @@
 [user]
-	name = David Clark
-	email = daviedwardclark@gmail.com
+  name = David Clark
+  email = daviedwardclark@gmail.com
 [core]
-	editor = atom
-	excludesfile = ~/.gitignore
+  editor = atom
+  excludesfile = ~/.gitignore
