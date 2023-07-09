@@ -1,8 +1,7 @@
 # Install Visual Studio Code, Git, and Node
 # Install HTTP Server: sudo npm install http-server -g
+# HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
 # Install Homebrew
-# Run HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
-# Reclaim .config: sudo chown -R dclark .config
 
 # EXPORTS
 export EDITOR="code";
