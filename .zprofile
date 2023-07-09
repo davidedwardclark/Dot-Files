@@ -1,11 +1,11 @@
-# Install Atom, Git, and Node
+# Install Visual Studio Code, Git, and Node
 # Install HTTP Server: sudo npm install http-server -g
 # Install Homebrew
 # Run HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
 # Reclaim .config: sudo chown -R dclark .config
 
 # EXPORTS
-export EDITOR="atom";
+export EDITOR="code";
 
 # FILES
 alias ..="cd ..";
