@@ -1,6 +1,6 @@
 # Install Visual Studio Code, Homebrew, Git, and Node
 # Install HTTP Server: sudo npm install http-server -g
-# HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
+# Run HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
 
 # EXPORTS
 export EDITOR="code";
