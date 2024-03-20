@@ -2,5 +2,5 @@
   name = David Clark
   email = david@textandpixel.com
 [core]
-  editor = atom
+  editor = code
   excludesfile = ~/.gitignore
