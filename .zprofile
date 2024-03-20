@@ -1,6 +1,6 @@
 # Install Visual Studio Code, Homebrew, Git, and Node
 # Install HTTP Server: sudo npm install http-server -g
-# Run HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
+# HTTP Server w/SSL: https://stackoverflow.com/questions/35127383/npm-http-server-with-ssl
 
 # EXPORTS
 export EDITOR="code";
@@ -18,9 +18,11 @@ alias pull="git pull";
 # LOCAL WEBSERVER
 alias http="http-server -o";
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # STARTUP
 projects;
 
 # CLEANUP
 clear;
-eval "$(/opt/homebrew/bin/brew shellenv)"
