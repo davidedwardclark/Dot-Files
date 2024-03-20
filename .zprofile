@@ -18,7 +18,7 @@ alias pull="git pull";
 # LOCAL WEBSERVER
 alias http="http-server -o";
 
-# Homebrew
+# HOMEBREW
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # STARTUP
