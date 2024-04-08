@@ -8,7 +8,7 @@ export EDITOR="code";
 # FILES
 alias ..="cd ..";
 alias la="ls -lah";
-alias projects="cd ~/Projects";
+alias repositories="cd ~/Repositories";
 
 # GIT
 alias status="git status";
@@ -22,7 +22,7 @@ alias http="http-server -o";
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # STARTUP
-projects;
+repositories;
 
 # CLEANUP
 clear;
